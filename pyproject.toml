@@ -1,0 +1,25 @@
+[project]
+name = "dit"
+version = "0.1.0"
+description = "Official PyTorch Implementation of \"Scalable Diffusion Models with Transformers\""
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "diffusers>=0.36.0",
+    "numpy>=2.4.1",
+    "pillow>=12.1.0",
+    "timm>=1.0.24",
+    "torch",
+    "torchvision",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
