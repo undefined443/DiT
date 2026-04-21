@@ -5,6 +5,7 @@ description = "Official PyTorch Implementation of \"Scalable Diffusion Models wi
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "accelerate>=1.12.0",
     "diffusers>=0.36.0",
     "numpy>=2.4.1",
     "pillow>=12.1.0",
@@ -20,6 +21,6 @@ torchvision = { index = "pytorch" }
 
 [[tool.uv.index]]
 name = "pytorch"
-url = "https://download.pytorch.org/whl/cu130"
+url = "https://download.pytorch.org/whl/cu128"
 explicit = true
 
